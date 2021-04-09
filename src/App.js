@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Notes from './components/notes';
 
-function App() {
-  return <h1>Hello</h1>;
+export default class App extends Component {
+  render() {
+    return (
+      <section>
+        <form>
+          <input />
+          <textarea />
+          <button>OK</button>
+        </form>
+
+        <Notes />
+      </section>
+    );
+  }
 }
-
-export default App;
