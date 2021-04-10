@@ -1,0 +1,76 @@
+.form-add-note {
+  display: flex;
+  flex-direction: column;
+  background: #2f1f30;
+  align-items: center;
+  width: 80vh;
+  height: 100vh;
+  padding: 10px;
+}
+
+.form-add-note_input {
+  width: 90%;
+  height: 40px;
+  background: #2f1f30;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.form-add-note_input::placeholder {
+  color: #787377;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-add-note_input:hover {
+  transition: 1500ms;
+  border-bottom: 2px solid #3797ef;
+}
+
+.form-add-note_textarea {
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  background: #2f1f30;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form-add-note_textarea::placeholder {
+  color: #787377;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-add-note_textarea:hover {
+  transition: 1500ms;
+  border: 2px solid #3797ef;
+}
+
+.form-add-note_button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  background: #3797ef;
+  cursor: pointer;
+}
+
+.form-add-note_button:hover {
+  transition: 500ms;
+  box-shadow: 3px 3px 10px rgba(62, 123, 255, 0.5);
+  background: #5aa8f1;
+}
