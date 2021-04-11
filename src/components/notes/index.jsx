@@ -22,9 +22,9 @@ class Notes extends Component {
           'Estudo',
           'Trabalho',
           'Estudo'
-        ).map((category) => {
+        ).map((category, index) => {
           return (
-            <li className="note_li">
+            <li key={index} className="note_li">
               <CardNote />
             </li>
           );
