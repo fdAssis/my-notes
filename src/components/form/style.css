@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   background: #2f1f30;
+  border-radius: 5px;
   align-items: center;
-  width: 80vh;
-  height: 100vh;
+  min-width: 500px;
+  height: 100%;
   padding: 10px;
+  margin: 20px;
 }
 
 .form-add-note_input {
@@ -59,7 +61,7 @@
 }
 
 .form-add-note_button {
-  width: 200px;
+  width: 150px;
   height: 50px;
   border: none;
   border-radius: 10px;

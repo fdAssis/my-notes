@@ -1,0 +1,17 @@
+.cardNote_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardNote_category {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cardNote_date {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}

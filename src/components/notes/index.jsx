@@ -3,23 +3,32 @@ import React, { Component } from 'react';
 // Components ---- ./src/components
 import CardNote from '../cardNote';
 
+import './style.css';
+
 class Notes extends Component {
   render() {
     return (
-      <ul>
-        {Array.of('Trabalho', 'Estudo', 'Trabalho', 'Estudo').map(
-          (category) => {
-            return (
-              <li>
-                <header>
-                  <h3>{category}</h3>
-                  <p>20/03/2021</p>
-                </header>
-                <CardNote />
-              </li>
-            );
-          }
-        )}
+      <ul className="note_ul">
+        {Array.of(
+          'Estudo',
+          'Trabalho',
+          'Estudo',
+          'Trabalho',
+          'Estudo',
+          'Trabalho',
+          'Estudo',
+          'Estudo',
+          'Trabalho',
+          'Estudo',
+          'Trabalho',
+          'Estudo'
+        ).map((category) => {
+          return (
+            <li className="note_li">
+              <CardNote />
+            </li>
+          );
+        })}
       </ul>
     );
   }

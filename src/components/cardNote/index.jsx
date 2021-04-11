@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
+import './style.css';
+
 class CardNote extends Component {
   render() {
     return (
-      <section>
-        <header>
-          <h3>Note 1</h3>
+      <section className="cardNote_section">
+        <header className="cardNote_header">
+          <h3 className="cardNote_category">Category</h3>
+          <p className="cardNote_date">20/03/2021</p>
         </header>
-        <p>Escreva sua nota aqui...</p>
+        <p className="cardNote_note">Escreva sua nota aqui...</p>
       </section>
     );
   }
