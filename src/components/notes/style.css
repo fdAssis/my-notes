@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 100vh;
+  width: 100vh;
   justify-content: space-between;
   padding: 20px;
 }
 
 .note_li {
+  min-width: 220px;
+  max-height: 250px;
   height: 50%;
   width: 30%;
   margin-bottom: 10px;

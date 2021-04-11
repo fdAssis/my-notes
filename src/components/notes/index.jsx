@@ -9,23 +9,10 @@ class Notes extends Component {
   render() {
     return (
       <ul className="note_ul">
-        {Array.of(
-          'Estudo',
-          'Trabalho',
-          'Estudo',
-          'Trabalho',
-          'Estudo',
-          'Trabalho',
-          'Estudo',
-          'Estudo',
-          'Trabalho',
-          'Estudo',
-          'Trabalho',
-          'Estudo'
-        ).map((category, index) => {
+        {this.props.notes.map((note, index) => {
           return (
             <li key={index} className="note_li">
-              <CardNote />
+              <CardNote title={note.title} note={note.note} />
             </li>
           );
         })}

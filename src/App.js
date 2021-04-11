@@ -8,11 +8,26 @@ import './assets/app.css';
 import './assets/index.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      note: [],
+    };
+  }
+  createNote(title, note) {
+    const newNote = { title, note };
+    const newArrayNote = [...this.state.note, newNote];
+    const newState = {
+      note: newArrayNote,
+    };
+
+    this.setState(newState);
+  }
   render() {
     return (
       <section className="section-container">
-        <Form />
-        <Notes />
+        <Form createNote={this.createNote.bind(this)} />
+        <Notes notes={this.state.note} />
       </section>
     );
   }
