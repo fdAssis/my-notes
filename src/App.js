@@ -4,9 +4,6 @@ import React, { Component } from 'react';
 import Notes from './components/notes';
 import Form from './components/form';
 
-import './assets/app.css';
-import './assets/index.css';
-
 class App extends Component {
   constructor() {
     super();
