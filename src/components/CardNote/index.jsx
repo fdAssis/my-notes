@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './style.css';
 
+import { ReactComponent as DeleteSVG } from '../../assets/img/trash.svg';
+
 class CardNote extends Component {
   constructor(props) {
     super(props);
@@ -21,6 +23,7 @@ class CardNote extends Component {
           <span className="cardNote_date">{this.dateFormated}</span>
         </header>
         <p className="cardNote_note">{this.props.note}</p>
+        <DeleteSVG className="cardNote_SVG" />
       </section>
     );
   }

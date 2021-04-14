@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 // Components ---- ./src/components
-import Notes from './components/notes';
-import Form from './components/form';
+import Notes from './components/Notes';
+import Form from './components/Form';
+
+import './assets/app.css';
+import './assets/index.css';
 
 class App extends Component {
   constructor() {

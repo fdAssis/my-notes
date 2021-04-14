@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components ---- ./src/components
-import CardNote from '../cardNote';
+import CardNote from '../CardNote';
 
 import './style.css';
 

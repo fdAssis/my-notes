@@ -1,0 +1,38 @@
+.cardNote_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardNote_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardNote_category {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cardNote_date {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardNote_note {
+  width: 200px;
+}
+
+.cardNote_SVG {
+  display: flex;
+  margin-top: 50px;
+  width: 50px;
+}
+
+.cardNote_SVG:hover {
+  transition: 1500ms;
+  transform: scale(1.2) rotate(20deg) rotate(-20deg);
+}
