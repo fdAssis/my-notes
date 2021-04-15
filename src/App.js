@@ -14,6 +14,7 @@ class App extends Component {
       note: [],
     };
   }
+
   createNote(title, note) {
     const newNote = { title, note };
     const newArrayNote = [...this.state.note, newNote];
@@ -23,11 +24,19 @@ class App extends Component {
 
     this.setState(newState);
   }
+
+  deleteNote(index) {
+    console.log({ index });
+    let arrayNotes = this.state.note;
+    arrayNotes.splice(index, 1);
+    this.setState({ note: arrayNotes });
+  }
+
   render() {
     return (
       <section className="section-container">
         <Form createNote={this.createNote.bind(this)} />
-        <Notes notes={this.state.note} />
+        <Notes delete={this.deleteNote.bind(this)} notes={this.state.note} />
       </section>
     );
   }

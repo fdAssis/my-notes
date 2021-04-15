@@ -15,6 +15,10 @@ class CardNote extends Component {
                          ${this.date.getMinutes()}`;
   }
 
+  deleteNote() {
+    this.props.delete(this.props.index);
+  }
+
   render() {
     return (
       <section className="cardNote_section">
@@ -23,7 +27,10 @@ class CardNote extends Component {
           <span className="cardNote_date">{this.dateFormated}</span>
         </header>
         <p className="cardNote_note">{this.props.note}</p>
-        <DeleteSVG className="cardNote_SVG" />
+        <DeleteSVG
+          onClick={this.deleteNote.bind(this)}
+          className="cardNote_SVG"
+        />
       </section>
     );
   }
